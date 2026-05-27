@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Energia Solar no Campo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h2>Agrinho <span>2026</span></h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#calculadora">Simulador</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h1>Energia Solar no Campo: Cultivando um Futuro Sustentável</h1>
+            <p>Descubra como a tecnologia fotovoltaica está transformando o agronegócio, reduzindo custos e preservando o meio ambiente.</p>
+            <a href="#beneficios" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <section id="beneficios" class="beneficios">
+        <div class="container">
+            <h2 class="section-title">Por que usar Energia Solar no Agro?</h2>
+            <div class="grid-beneficios">
+                <div class="card">
+                    <h3>Sustentabilidade</h3>
+                    <p>Redução drástica na emissão de CO₂. Uma produção limpa que protege o solo e o futuro das próximas gerações.</p>
+                </div>
+                <div class="card">
+                    <h3>Economia Real</h3>
+                    <p>Redução de até 95% na conta de luz. Dinheiro que sobra para investir em novas tecnologias e sementes.</p>
+                </div>
+                <div class="card">
+                    <h3>Autonomia Isolada</h3>
+                    <p>Leve energia para sistemas de irrigação e cercas elétricas mesmo nos pontos mais distantes e isolados da fazenda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculadora" class="calculadora-section">
+        <div class="container">
+            <h2 class="section-title">Simulador Solar do Agrinho</h2>
+            <p class="sub">Descubra uma estimativa de quantos painéis sua propriedade precisa!</p>
+            
+            <div class="calculadora-box">
+                <div class="input-group">
+                    <label for="gasto">Gasto mensal médio com energia (R$):</label>
+                    <input type="number" id="gasto" placeholder="Ex: 500" min="1">
+                </div>
+                <button onclick="calcularSimulacao()" class="btn-calc">Calcular Estimativa</button>
+
+                <div id="resultado" class="resultado hidden">
+                    <h3>Resultado da Simulação:</h3>
+                    <p>⚡ <strong>Economia anual estimada:</strong> R$ <span id="economia-anual">0</span></p>
+                    <p>☀️ <strong>Painéis necessários (média):</strong> <span id="paineis">0</span> placas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Projeto Agrinho - Geração de Energia Solar no Campo. Desenvolvido para um futuro mais verde.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
